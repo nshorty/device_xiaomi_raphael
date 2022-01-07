@@ -41,7 +41,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/raphael
-TARGET_KERNEL_CONFIG := raphael_user_defconfig
+TARGET_KERNEL_CONFIG := raphael_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
@@ -159,6 +159,7 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

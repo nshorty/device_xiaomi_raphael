@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_raphael.mk
+    $(LOCAL_DIR)/xtended_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_raphael-userdebug \
-    arrow_raphael-eng
+    xtended_raphael-userdebug \
+    xtended_raphael-eng
