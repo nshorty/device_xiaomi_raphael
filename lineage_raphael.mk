@@ -23,6 +23,10 @@ $(call inherit-product-if-exists, vendor/gapps/basic/config.mk)
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# FOD
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_raphael
 PRODUCT_DEVICE := raphael
