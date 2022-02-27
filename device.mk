@@ -551,3 +551,8 @@ PRODUCT_COPY_FILES += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
+
+# Preopt System Apps
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+	  SystemUI \
+	  Settings
