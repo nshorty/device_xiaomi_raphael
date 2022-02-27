@@ -605,4 +605,11 @@
         <!-- B y-intercept --> <item>-0.349361641294833436</item>
     </string-array>
 
+    <!-- Pocket Lock -->
+    <bool name="config_pocketUseLightSensor">false</bool>
+
+    <!-- Statusbar Left-Right padding defaults -->
+    <integer name="config_statusbarPaddingStartDef">16</integer>
+    <integer name="config_statusbarPaddingEndDef">5</integer>
+
 </resources>
