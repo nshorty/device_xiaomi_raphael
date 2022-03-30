@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_raphael.mk
+    $(LOCAL_DIR)/lineage_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_raphael-user \
-    nad_raphael-userdebug \
-    nad_raphael-eng
+    lineage_raphael-user \
+    lineage_raphael-userdebug \
+    lineage_raphael-eng
