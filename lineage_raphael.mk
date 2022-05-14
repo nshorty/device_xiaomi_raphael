@@ -18,6 +18,12 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common VoltageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# GApps
+$(call inherit-product-if-exists, vendor/gapps/basic/config.mk)
+
+#QuickTap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 2160
 
