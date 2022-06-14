@@ -15,7 +15,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common VoltageOS stuff.
+# Inherit some common CrDroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # GApps
@@ -28,6 +28,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 2160
 
 # UDFPS animations
+TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 
 # Face Unlock
